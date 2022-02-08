@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CustomMusicPlayer">
+        <activity android:name=".CurrentPlaylistActivity"/>
+        <activity android:name=".MyPlayListActivity"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".SearchActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
