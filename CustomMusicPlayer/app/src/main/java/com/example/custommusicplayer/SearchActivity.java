@@ -34,18 +34,17 @@ public class SearchActivity extends AppCompatActivity {
                     case R.id.action_search:
                         intent = new Intent(mContext, SearchActivity.class);
                         startActivity(intent);
-                        return true;
+                        break;
                     case R.id.current_playlist:
                         intent = new Intent(mContext, CurrentPlaylistActivity.class);
                         startActivity(intent);
-                        return true;
+                        break;
                     case R.id.user_playlist:
                         intent = new Intent(mContext, MyPlayListActivity.class);
                         startActivity(intent);
-                        return true;
-                    default:
-                        return false;
+                        break;
                 }
+                return false;
             }
         });
     }
