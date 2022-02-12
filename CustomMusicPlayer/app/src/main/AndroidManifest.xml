@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CustomMusicPlayer">
-        <activity android:name=".CurrentPlaylistActivity"/>
-        <activity android:name=".MyPlayListActivity"/>
+        <activity android:name=".CurrentPlaylistActivity"
+            android:launchMode="singleInstance"/>
+        <activity android:name=".MyPlayListActivity"
+            android:launchMode="singleInstance"/>
         <activity
             android:name=".SearchActivity"
+            android:launchMode="singleInstance"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
